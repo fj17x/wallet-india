@@ -16,11 +16,12 @@ const Home = () => {
     const accounts = await web3.eth.getAccounts() //choosing account to use
 
     const storeHashContract = await storeHash()
+    console.log("YYY")
     const receipt = await storeHashContract.methods
       .getHash()
       .call({ from: accounts[0] })
 
-    console.log(receipt)
+    console.log("XXX", receipt)
 
     setHashList(receipt)
     setGotData(true)
@@ -60,7 +61,7 @@ const Home = () => {
           {hashList.map((hash, i) => (
             <li key={i}>
               <a
-                href={`https://ipfs.infura.io/ipfs/${hash}`}
+                href={`https://infura-ipfs.io/ipfs/${hash}`}
               >{`Item Hash: ${hash}`}</a>
             </li>
           ))}

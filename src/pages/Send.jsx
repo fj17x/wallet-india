@@ -118,8 +118,8 @@ const Home = () => {
           {hashList.map((hash, i) => (
             <li key={i}>
               <a
-                href={`https://ipfs.infura.io/ipfs/${hash}`}
-              >{`https://ipfs.infura.io/ipfs/${hash}`}</a>
+                href={`https://infura-ipfs.io/ipfs/${hash}`}
+              >{`https://infura-ipfs.io/ipfs/${hash}`}</a>
             </li>
           ))}
         </ol>

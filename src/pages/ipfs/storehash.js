@@ -2,9 +2,8 @@ import getWeb3 from "./getWeb3"
 // to call the getWeb3() function here.
 
 async function storehash() {
-  const address = "0xd59b7ba9dcfd38eaa55bebe0e93b4944c1a895b1"
+  const address = "0x0cB7AC1624A626D64947aaf5eDa36381065791E3"
   // address and ABI of contract deployed in Ropsten network
-  const test = ""
   const abi = [
     {
       inputs: [],
